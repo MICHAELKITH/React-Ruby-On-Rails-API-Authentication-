@@ -8,6 +8,8 @@ gem "rails", "~> 7.0.8"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
+gem 'bcrypt', '~> 3.1', '>= 3.1.12'
+gem 'rack-cors', require: 'rack/cors'
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
@@ -70,3 +72,4 @@ group :test do
   gem "selenium-webdriver"
 
 end
+

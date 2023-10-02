@@ -19,11 +19,16 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  pool: 5
 
 development:
   <<: *default
   database: authetication_development
+  host: localhost
+  username: postgres
+  password: slofile
+  port: 5432
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -82,5 +87,4 @@ test:
 production:
   <<: *default
   database: authetication_production
-  username: authetication
-  password: <%= ENV["AUTHETICATION_DATABASE_PASSWORD"] %>
+
