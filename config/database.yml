@@ -26,8 +26,8 @@ development:
   database: authetication_development
   host: localhost
   username: postgres
-  password: slofile
-  port: 5432
+  password: openserver007
+  port: 5433
 
 
   # The specified database role being used to connect to postgres.
